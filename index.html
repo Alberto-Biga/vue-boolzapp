@@ -43,7 +43,9 @@
                     </div>
                     <!-- search input -->
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
                         <input type="text" class="form-control" placeholder="Cerca..." aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <!-- chat -->
@@ -67,7 +69,43 @@
                     </div>
                 </div>
                 <!-- SECTION COLONNA DX -->
-                <div class="col-8" id="leftColumn"></div>
+                <div class="col-8" id="leftColumn">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- left side ( img name ) -->
+                        <div>
+                            <img class="profilePicture rounded-circle" src="./img/avatar_1.jpg" alt="">
+                            <span>
+                                <span>Michele</span>                                
+                            </span>
+                        </div>
+                        <!-- right side (icons) -->
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass grey"></i>
+                            <i class="fa-solid fa-paperclip grey"></i>
+                            <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                        </div>
+                    </div>
+                    <!-- chat -->
+                    <div class="chat">
+                        <ul class="list-group list-group-flush d-flex flex-column">
+                            <li class="list-group-item sent rounded-3 m-3 align-self-end">                               
+                                Sei arrivato a casa sano e salvo?                                                      
+                            </li>
+                            <li class="list-group-item received rounded-3 m-3 align-self-start">                               
+                                Sisi                                                      
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input-group mb-3 zz align-items-center" >
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa-solid fa-face-grin"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Digita un nuovo messaggio..." aria-label="Username" aria-describedby="basic-addon1">
+                        <span>
+                            <i class="fa-solid fa-microphone"></i>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

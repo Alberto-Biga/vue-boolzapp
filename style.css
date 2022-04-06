@@ -12,8 +12,8 @@ body{
     height: 90vh; 
 }
 #main{
-    height: 92vh;
-    border: 1px solid red;
+    height: 90vh;
+    /* border: 1px solid red; */
     margin: 5vh auto;
 }
 .profilePicture{
@@ -30,4 +30,17 @@ body{
 .notification{
     padding: 1% 5%;
     margin: 2px 2px;
+}
+.chat{
+    height: 75vh;
+    background-image: url(./img/mine.jpg);
+}
+.sent{
+    background-color: #15dfcb;       
+}
+.received{
+    background-color: #fff;
+}
+.zz{
+    height: 5vh;
 }
