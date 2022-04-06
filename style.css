@@ -12,7 +12,7 @@ body{
     height: 90vh; 
 }
 #main{
-    height: 90vh;
+    height: 94vh;
     /* border: 1px solid red; */
     margin: 5vh auto;
 }
@@ -36,11 +36,8 @@ body{
     background-image: url(./img/mine.jpg);
 }
 .sent{
-    background-color: #15dfcb;       
+    background-color: #15dfcb;           
 }
 .received{
     background-color: #fff;
-}
-.zz{
-    height: 5vh;
 }

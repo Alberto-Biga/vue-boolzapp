@@ -2,6 +2,10 @@ var app = new Vue(
     {
     el: '#root',
     data: {
+        profilo: {
+            name: 'Sofia',
+            img:'_io'
+        },
         contacts: [{
                 name: 'Michele',
                 avatar: '_1',
@@ -156,5 +160,8 @@ var app = new Vue(
                 ]
             }
         ]
+    },
+    methods:{
+       
     }
 });
