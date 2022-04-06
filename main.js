@@ -159,9 +159,16 @@ var app = new Vue(
                     }
                 ]
             }
-        ]
+        ],
+        //nuovo indice per identificare i contatti ed i loro messaggi
+        indexChanged: 0,        
     },
     methods:{
-       
+        //cambio indice per stampare i messaggi corrispondenti all'utente indicato
+       changeContactsIndex: function(index){
+           console.log(index);
+           this.indexChanged = index;
+           console.log(`il nuovo indice: ${this.indexChanged}`)
+       }
     }
 });
