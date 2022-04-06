@@ -1,10 +1,9 @@
-var app = new Vue(
-    {
+var app = new Vue({
     el: '#root',
     data: {
         profilo: {
             name: 'Sofia',
-            img:'_io'
+            img: '_io'
         },
         contacts: [{
                 name: 'Michele',
@@ -161,14 +160,36 @@ var app = new Vue(
             }
         ],
         //nuovo indice per identificare i contatti ed i loro messaggi
-        indexChanged: 0,        
+        indexChanged: 0,
+        newMessageText: ''
     },
-    methods:{
+    methods: {
         //cambio indice per stampare i messaggi corrispondenti all'utente indicato
-       changeContactsIndex: function(index){
-           console.log(index);
-           this.indexChanged = index;
-           console.log(`il nuovo indice: ${this.indexChanged}`)
-       }
+        changeContactsIndex: function (index) {
+            console.log(index);
+            this.indexChanged = index;
+            console.log(`il nuovo indice: ${this.indexChanged}`)
+        },
+        //nuovo messaggio
+        newMessage: function () {
+            //identifico nuovo messaggio utente
+            let newMessageObject = {
+                message: this.newMessageText,
+                status: 'sent'
+            }
+            //elaboro risposta automatica
+            let newMessageObjectReceived = {
+                message: 'Non te la prendere, sono solo una risposta automatica!',
+                status: 'received'
+            }      
+            //salvo messaggio utente      
+            this.contacts[this.indexChanged].messages.push(newMessageObject);
+            //temporizzo 1s risposta automatica computer
+            setTimeout(
+                () => {
+                    this.contacts[this.indexChanged].messages.push(newMessageObjectReceived);
+                }, 1000
+            );
+        },        
     }
 });

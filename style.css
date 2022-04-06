@@ -37,12 +37,17 @@ body{
     overflow-y: auto;
 }
 .sent{
-    background-color: #15dfcb;           
+    background-color: #15dfcb;
+    padding-bottom: 0;              
 }
 .received{
     background-color: #fff;
+    padding-bottom: 0;
 }
 .contacts{
     overflow-y: auto;
     height: 60vh;
+}
+.date{
+    font-size: 10px;
 }

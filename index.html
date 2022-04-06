@@ -96,17 +96,26 @@
                             <li class="list-group-item rounded-3 m-3"                                
                                 v-for="(element, index) in contacts[indexChanged].messages"
                                 :class="(element.status == 'sent') ? 'align-self-end sent' : 'align-self-start received' ">                               
-                                    {{element.message}}                                                  
+                                    {{element.message}}    
+                                    <p class="date">
+                                        {{element.date}}
+                                    </p>                                              
                             </li>
                         </ul>
                     </div>
                     <!-- message input-->
-                    <div class="input-group mb-3 zz align-items-center" >
+                    <div class="input-group mb-3 align-items-center" >
                         <span class="input-group-text" id="basic-addon1">
                             <!-- emoji -->
                             <i class="fa-solid fa-face-grin"></i>
                         </span>
-                        <input type="text" class="form-control" placeholder="Digita un nuovo messaggio..." aria-label="Username" aria-describedby="basic-addon1">
+                        <input id="newMessage" type="text" 
+                               class="form-control" 
+                               placeholder="Digita un nuovo messaggio..." 
+                               aria-label="Username" 
+                               aria-describedby="basic-addon1"
+                               v-model="newMessageText"
+                               @keyup.enter="newMessage">
                         <span>
                             <!-- vocal message -->
                             <i class="fa-solid fa-microphone"></i>
