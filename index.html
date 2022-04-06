@@ -17,21 +17,53 @@
 
     <div id="root">
         <div class="container">
-            <div class="row" id="main">
+            <div class="row  bg-light" id="main">
                 <!-- SECTION COLONNA SX -->
                 <div class="col-4" id="rightColumn">
                     <div class="d-flex justify-content-between align-items-center">
-                        <!-- left side (img-name) -->
+                        <!-- left side ( img name ) -->
                         <div>
                             <img class="profilePicture rounded-circle" src="./img/avatar_io.jpg" alt="">
                             <span>Sofia</span>
                         </div>
                         <!-- right side (icons) -->
                         <div>
-                            <i class="fa-solid fa-spinner"></i>
-                            <i class="fa-solid fa-message"></i>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <i class="fa-solid fa-spinner grey"></i>
+                            <i class="fa-solid fa-message grey"></i>
+                            <i class="fa-solid fa-ellipsis-vertical grey"></i>
                         </div>
+                    </div>
+                    <!-- blue notification -->
+                    <div class="notification d-flex justify-content-between align-items-center bg-info">
+                        <i class="fa-solid fa-bell-slash bell"></i>
+                        <div>
+                            <p>Ricevi notifiche di nuovi messaggi</p>
+                            <a class="none" href="">Attiva notifiche desktop</a>
+                        </div>
+                    </div>
+                    <!-- search input -->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control" placeholder="Cerca..." aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <!-- chat -->
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                                role="button">
+                                <div>
+                                    <img class="profilePicture rounded-circle" src="./img/avatar_1.jpg" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        Michele   
+                                    </div>
+                                    <div class="grey">
+                                        Ultimo messaggio inviato
+                                    </div>                                    
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <!-- SECTION COLONNA DX -->
