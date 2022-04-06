@@ -34,10 +34,15 @@ body{
 .chat{
     height: 75vh;
     background-image: url(./img/mine.jpg);
+    overflow-y: auto;
 }
 .sent{
     background-color: #15dfcb;           
 }
 .received{
     background-color: #fff;
+}
+.contacts{
+    overflow-y: auto;
+    height: 60vh;
 }

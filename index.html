@@ -49,11 +49,11 @@
                         <input type="text" class="form-control" placeholder="Cerca..." aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <!-- chat -->
-                    <div>
+                    <div class="contacts">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex justify-content-between align-items-center"
                                 role="button"
-                                v:for="(element, index) in contacts">                                
+                                v-for="(element, index) in contacts">                                
                                 <div>
                                     <img class="profilePicture rounded-circle" 
                                          :src="`./img/${element.avatar}.jpg`" alt="">
